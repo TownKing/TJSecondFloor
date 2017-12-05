@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="indexPageCell" rowHeight="547" id="KGk-i7-Jjw" customClass="TJCommunityIndexPageTVC">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="547"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="546.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdJ-4L-Om4" userLabel="totalView">
+                        <rect key="frame" x="26" y="31" width="276" height="505"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vns-Zy-TXU" userLabel="leftView">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="505"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m70-6J-HX4" userLabel="centerView">
+                                <rect key="frame" x="92" y="0.0" width="92" height="505"/>
+                                <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALh-ii-8KE" userLabel="rightView">
+                                <rect key="frame" x="184" y="0.0" width="92" height="505"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m70-6J-HX4" firstAttribute="leading" secondItem="vns-Zy-TXU" secondAttribute="trailing" id="38F-Cw-fl5"/>
+                            <constraint firstItem="ALh-ii-8KE" firstAttribute="leading" secondItem="m70-6J-HX4" secondAttribute="trailing" id="9vj-rm-PSd"/>
+                            <constraint firstItem="ALh-ii-8KE" firstAttribute="top" secondItem="gdJ-4L-Om4" secondAttribute="top" id="EOS-HP-x1V"/>
+                            <constraint firstItem="m70-6J-HX4" firstAttribute="top" secondItem="gdJ-4L-Om4" secondAttribute="top" id="N8i-Ek-0Rd"/>
+                            <constraint firstAttribute="trailing" secondItem="ALh-ii-8KE" secondAttribute="trailing" id="UNq-ln-MFR"/>
+                            <constraint firstItem="ALh-ii-8KE" firstAttribute="width" secondItem="vns-Zy-TXU" secondAttribute="width" id="bI9-6X-geI"/>
+                            <constraint firstAttribute="bottom" secondItem="ALh-ii-8KE" secondAttribute="bottom" id="c89-a3-nqQ"/>
+                            <constraint firstItem="vns-Zy-TXU" firstAttribute="leading" secondItem="gdJ-4L-Om4" secondAttribute="leading" id="ltp-jg-g3H"/>
+                            <constraint firstAttribute="bottom" secondItem="m70-6J-HX4" secondAttribute="bottom" id="oOo-7h-Vab"/>
+                            <constraint firstItem="m70-6J-HX4" firstAttribute="width" secondItem="vns-Zy-TXU" secondAttribute="width" id="tHx-yj-xJd"/>
+                            <constraint firstItem="vns-Zy-TXU" firstAttribute="top" secondItem="gdJ-4L-Om4" secondAttribute="top" id="tr4-2G-g2j"/>
+                            <constraint firstAttribute="bottom" secondItem="vns-Zy-TXU" secondAttribute="bottom" id="zad-Aw-9jK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gdJ-4L-Om4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="e3y-Ky-Ln1"/>
+                    <constraint firstItem="gdJ-4L-Om4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="eLJ-Hr-BFd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gdJ-4L-Om4" secondAttribute="trailing" constant="10" id="xZ7-LC-Ps6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gdJ-4L-Om4" secondAttribute="bottom" id="xk0-aY-yXL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="20" y="40.5"/>
+        </tableViewCell>
+    </objects>
+</document>
